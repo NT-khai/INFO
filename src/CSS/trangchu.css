@@ -1,0 +1,240 @@
+#header-left h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  font-size: 40px;
+  color: rgb(28, 80, 139);
+  animation: chu 5s ease infinite;
+}
+body {
+  background-color: rgb(207, 180, 241);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+#header-right {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+#header-menu ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+#header-right ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.item-a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.item-a:hover {
+  background-color: rgb(111, 0, 255);
+  border-radius: 5px;
+  color: aliceblue;
+  box-shadow: 10px 10px 10px rgb(37, 36, 36);
+}
+
+#content1,
+#content2 {
+  position: relative;
+}
+
+.spam {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: aliceblue;
+}
+.img-content {
+  width: 100%;
+}
+
+.name-section1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.name-section {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  height: 100%;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.img-article {
+  width: 150px;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.img-article:hover {
+  background-color: rgba(58, 148, 226, 0.3);
+  transform: scale(1.1);
+  border-radius: 10px;
+  transform: translateY(-5px);
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.div1 {
+  grid-column: span 3 / span 3;
+  grid-row: span 5 / span 5;
+  animation: chuyen-anh 6s ease infinite;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.div4 {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-column-start: 4;
+}
+
+.div4 h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.div4 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.div5 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 5;
+}
+
+.div5 h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+@keyframes chuyen-anh {
+  0% {
+    background-image: url("https://cdn-media.sforum.vn/storage/app/media/anh-dep-8.jpg");
+  }
+  33% {
+    background-image: url("https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/anh-dep-thien-nhien-2-1.jpg");
+  }
+  66% {
+    background-image: url("https://i.ex-cdn.com/phatgiao.org.vn/files/content/2023/04/26/2-0922.jpg");
+  }
+  99% {
+    background-image: url("https://sanphukhoa-vietphap.com/wp-content/uploads/2021/03/me-thien-nhien-da-day-chung-ta-bai-hoc-gi-1-1109.jpg");
+  }
+}
+
+/* Footer */
+footer {
+  background: #1f1f1f;
+  color: #ddd;
+  padding: 50px 20px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h2,
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-col a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #3f51b5;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
